@@ -1,0 +1,21 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(169, 169, 169, 0.9);
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+body {
+    background-image: url("./src/Assets/Pokemon.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
