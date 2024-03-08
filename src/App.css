@@ -15,7 +15,7 @@ main {
 }
 
 body {
-    background-image: url("./src/Assets/Pokemon.PNG");
+    background-image: url("./Assets/Pokemon.PNG");
     background-repeat: no-repeat;
     background-size: cover;
 }
