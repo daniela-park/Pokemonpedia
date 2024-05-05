@@ -39,32 +39,32 @@ function App() {
 
   return (
     <main>
-      <div className='backgroundImg'>
-      <form onSubmit={handleSubmit}>
-        <label>
-          <h1>Enter Pokemon name:</h1>
+      <div className='container'>
+        <form onSubmit={handleSubmit}>
+          <label>
+            <h1>Enter Pokemon name:</h1>
+            <br />
+            <input type="text" name="pokemonName" />
+          </label>
           <br />
-          <input type="text" name="pokemonName" />
-        </label>
-        <br />
-        <button type="submit">Get info!</button>
-      </form>
+          <button type="submit">Get info!</button>
+        </form>
 
-      {pokemon &&
-        <div>
-          <img src={pokemon.sprites.front_default} height="225x" alt={pokemon.name} />
-          <h2>{pokemon.name}</h2>
-          <h3>Type(s): {pokemon.types.map((typeData) => typeData.type.name).join(" and ")}</h3>
-          <h3>Base experience: {pokemon.base_experience}</h3>
-        </div>
-      }
-      {loading &&
-        <p>Loading...</p>
-      }
-      {error &&
-        <p>Couldn't find your pokemon!</p>
-      }
-    </div>
+        {pokemon &&
+          <div>
+            <img src={pokemon.sprites.front_default} height="225x" alt={pokemon.name} />
+            <h2>{pokemon.name}</h2>
+            <h3>Type(s): {pokemon.types.map((typeData) => typeData.type.name).join(" and ")}</h3>
+            <h3>Base experience: {pokemon.base_experience}</h3>
+          </div>
+        }
+        {loading &&
+          <p>Loading...</p>
+        }
+        {error &&
+          <p>Couldn't find your pokemon!</p>
+        }
+      </div>
     </main>
   )
 }
