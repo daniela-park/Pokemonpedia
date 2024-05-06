@@ -65,6 +65,10 @@ function App() {
           <p>Couldn't find your pokemon!</p>
         }
       </div>
+
+      <footer>
+        <button><a href="https://github.com/daniela-park/Pokemonpedia">Pokemonpedia Repository</a></button>
+      </footer>
     </main>
   )
 }

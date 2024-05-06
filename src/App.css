@@ -31,6 +31,16 @@ div h2::first-letter {
     text-transform: capitalize;
 }
 
+footer {
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
 @media screen and (max-width: 768px) {
     .container {
         height: 100%;
