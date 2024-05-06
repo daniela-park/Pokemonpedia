@@ -44,7 +44,7 @@ function App() {
           <label>
             <h1>Enter Pokemon name:</h1>
             <br />
-            <input type="text" name="pokemonName" />
+            <input type="text" name="pokemonName"/>
           </label>
           <br />
           <button type="submit">Get info!</button>

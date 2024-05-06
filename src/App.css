@@ -4,6 +4,8 @@ body {
     background-size: cover;
     background-color:  rgba(169, 169, 169, 0.9);
     background-position: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .container {
@@ -13,21 +15,23 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgba(169, 169, 169, 0.9);
     height: 100%;
-    width: 25%;
+    width: 50%;
     margin-top: 12.5vh;
     margin-left: auto;
     margin-right: auto;
-    padding: 5vw;
+    padding: 5vh;
     text-align: center;
 }
 
+form input[type="text"] {
+    text-transform: lowercase;
+}
 
+div h2::first-letter {
+    text-transform: capitalize;
+}
 
 @media screen and (max-width: 768px) {
-    body {
-        background-size: auto;
-    }
-
     .container {
         height: 100%;
         width: 75%;
